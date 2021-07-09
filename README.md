@@ -116,8 +116,19 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What are the main differences between a stateful and a functional component?
 
+Stateful components can hold state whereas functional components cannot. This distinction makes stateful (class) components far more flexible/scalable as your application grows.
+
 2. When does a componentWillMount function be called? What about a componentWillUpdate?
+
+componentWillMount - at the start of the React lifecycle "Birth/Mounting"
+componentWillUpdate - during the middle section of the React lifecycle "Growth/Updating"
 
 3. Define stateful logic.
 
+Application logic that responds to the state of the application. Examples could be the user clicking a button.
+
 4. What are the three step of creating a successful test? What is done in each phase?
+
+Arrange - utilize the render method to begin working in a virtual DOM
+Act - the query that looks for a particular part of the page
+Assert - defines the expected state of the searched for part of the page
